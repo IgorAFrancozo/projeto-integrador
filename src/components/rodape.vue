@@ -1,0 +1,5 @@
+<template>
+	<div class="rodape">
+		<h1>Rodapé</h1>
+	</div>
+</template>
