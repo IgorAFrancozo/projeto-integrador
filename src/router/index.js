@@ -6,9 +6,8 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: dashboard
+      component: app
     },
-	
   ]
 })
 
