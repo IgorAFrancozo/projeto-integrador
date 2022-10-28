@@ -1,6 +1,6 @@
 <template>
 	<div class="conteudo">
-		<form class="d-flex mt-3" role="search">
+		<form class="d-flex mt-3 p-4" role="search">
 			<input class="form-control me-2" type="search" placeholder="Faça Sua Pesquisa" aria-label="Search">
 			<button class="btn btn-outline-primary" type="submit">Search</button>
 		</form>
