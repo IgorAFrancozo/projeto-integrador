@@ -1,32 +1,17 @@
-<script>
+<script setup>
 import cabecalho from './components/cabecalho.vue';
 import conteudo from './components/conteudo.vue';
 import rodape from './components/rodape.vue';
-
-export default {
-
-	name: "App",
-
-	components: {
-		cabecalho,
-		conteudo,
-		rodape
-	},
-	methods: {
-
-	},
-	mounted() {
-
-	}
-}
-
+import { RouterView } from 'vue-router';
 
 </script>
 
 <template>
 	<div class="dashboard text-center">
 		<cabecalho></cabecalho>
-		<conteudo></conteudo>
+		<main>
+			<RouterView />
+		</main>
 		<rodape></rodape>
 	</div>
 

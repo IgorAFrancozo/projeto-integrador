@@ -1,3 +1,7 @@
+<script>
+import { RouterLink } from 'vue-router';
+</script>
+
 <template>
 	<div class="conteudo">
 		<form class="d-flex mt-3 p-4" role="search">
@@ -14,18 +18,20 @@
 					<button type="button" data-bs-target="#tenis" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				</div>
 				<div class="carousel-inner ">
-					<div class="carousel-item active" data-bs-interval="10000">
-						<img src="../assets/tenis1.jpg" class="d-block w-100 p-5 rounded-2" alt="...">
-						<div class="carousel-caption  d-md-block">
+					<RouterLink to="/itens/1">
+						<div class="carousel-item active" data-bs-interval="10000">
+							<img src="../assets/tenis1.png" class="d-block w-100 p-5 rounded-2" alt="...">
+							<div class="carousel-caption  d-md-block">
+							</div>
 						</div>
-					</div>
+					</RouterLink>
 					<div class="carousel-item" data-bs-interval="2000">
-						<img src="../assets/tenis2.jpg" class="d-block w-100 p-5 rounded-2" alt="...">
+						<img src="../assets/tenis2.png" class="d-block w-100 p-5 rounded-2" alt="...">
 						<div class="carousel-caption  d-md-block">
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img src="../assets/tenis3.jpg" class="d-block w-100 p-5 rounded-2" alt="...">
+						<img src="../assets/tenis3.png" class="d-block w-100 p-5 rounded-2" alt="...">
 						<div class="carousel-caption  d-md-block">
 						</div>
 					</div>
@@ -51,17 +57,17 @@
 				</div>
 				<div class="carousel-inner ">
 					<div class="carousel-item active" data-bs-interval="10000">
-						<img src="../assets/item2.1.jpg" class="d-block w-100 p-5 rounded-2" alt="...">
+						<img src="../assets/camisa1.png" class="d-block w-100 p-5 rounded-2" alt="...">
 						<div class="carousel-caption  d-md-block">
 						</div>
 					</div>
 					<div class="carousel-item" data-bs-interval="2000">
-						<img src="../assets/item2.2.jpg" class="d-block w-100 p-5 rounded-2" alt="...">
+						<img src="../assets/camisa2.png" class="d-block w-100 p-5 rounded-2" alt="...">
 						<div class="carousel-caption  d-md-block">
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img src="../assets/item2.3.jpg" class="d-block w-100 p-5 rounded-2" alt="...">
+						<img src="../assets/camisa3.png" class="d-block w-100 p-5 rounded-2" alt="...">
 						<div class="carousel-caption  d-md-block">
 						</div>
 					</div>
@@ -87,16 +93,16 @@
 				</div>
 				<div class="carousel-inner ">
 					<div class="carousel-item active" data-bs-interval="10000">
-						<img src="../assets/bola1.jpg" class="d-block w-100 p-5 rounded-2" alt="...">
+						<img src="../assets/bola1.png" class="d-block w-100 p-5 rounded-2" alt="...">
 						<div class="carousel-caption  d-md-block"></div>
 					</div>
 					<div class="carousel-item" data-bs-interval="2000">
-						<img src="../assets/bola2.jpg" class="d-block w-100 p-5 rounded-2" alt="...">
+						<img src="../assets/bola2.png" class="d-block w-100 p-5 rounded-2" alt="...">
 						<div class="carousel-caption  d-md-block">
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img src="../assets/bola3.jpg" class="d-block w-100 p-5 rounded-2" alt="...">
+						<img src="../assets/bola3.png" class="d-block w-100 p-5 rounded-2" alt="...">
 						<div class="carousel-caption  d-md-block">
 						</div>
 					</div>
@@ -122,11 +128,11 @@
 				</div>
 				<div class="carousel-inner ">
 					<div class="carousel-item active" data-bs-interval="10000">
-						<img src="../assets/whey1.jpg" class="d-block w-100 p-5 rounded-2" alt="...">
+						<img src="../assets/whey1.png" class="d-block w-100 p-5 rounded-2" alt="...">
 						<div class="carousel-caption  d-md-block"></div>
 					</div>
 					<div class="carousel-item" data-bs-interval="2000">
-						<img src="../assets/whey2.jpg" class="d-block w-100 p-5 rounded-2" alt="...">
+						<img src="../assets/whey2.png" class="d-block w-100 p-5 rounded-2" alt="...">
 						<div class="carousel-caption  d-md-block">
 						</div>
 					</div>

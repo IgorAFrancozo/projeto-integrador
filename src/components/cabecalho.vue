@@ -1,3 +1,6 @@
+<script>
+import { RouterLink } from 'vue-router';
+</script>
 <template>
 	<div class="cabecalho">
 		<nav class="navbar navbar-dark bg-primary p-4 rounded-3">
@@ -18,7 +21,8 @@
 				<div class="collapse navbar-collapse pt-4" id="navbarSupportedContent">
 					<ul class="navbar-nav">
 						<li class="nav-item mt-4">
-							<a class="btn btn-primary w-100" aria-current="page" href="#">Catálogo</a>
+							<RouterLink to="/" class="btn btn-primary w-100" aria-current="page">Catálogo
+							</RouterLink>
 						</li>
 						<li class="nav-item">
 							<a class="btn btn-primary w-100" data-bs-toggle="offcanvas" href="#offcanvasExample"
@@ -48,9 +52,11 @@
 										<li><a class="dropdown-item" href="#">Ótimo</a></li>
 									</ul>
 									<div class="mb-3">
-										<label for="exampleFormControlTextarea1" class="form-label">Conte-nos como melhorar: </label>
+										<label for="exampleFormControlTextarea1" class="form-label">Conte-nos como
+											melhorar: </label>
 										<textarea class="form-control" id="exampleFormControlTextarea1"
 											rows="3"></textarea>
+										<button class="btn btn-primary m-3">Avaliar</button>
 									</div>
 								</div>
 							</div>
