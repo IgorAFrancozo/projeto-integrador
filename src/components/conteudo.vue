@@ -83,7 +83,7 @@ import { RouterLink } from 'vue-router';
 			</div>
 		</div>
 		<div class="item3">
-			<h2 class="mt-4 text-center">Bola Basquete - Nike</h2>
+			<h2 class="mt-4 text-center">Bola de Basquete - Nike</h2>
 			<div id="bola" class="carousel carousel-dark slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#bola" data-bs-slide-to="0" class="active" aria-current="true"

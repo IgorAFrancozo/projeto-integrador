@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router';
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<a class="navbar-brand" href="#">GS-Code</a>
+				<a class="navbar-brand" href="#">GS - Code</a>
 				<button class="navbar-toggler" type="button" href="#">
 					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
 						class="bi bi-cart3" viewBox="0 0 16 16">
@@ -56,7 +56,7 @@ import { RouterLink } from 'vue-router';
 											melhorar: </label>
 										<textarea class="form-control" id="exampleFormControlTextarea1"
 											rows="3"></textarea>
-										<button class="btn btn-primary m-3">Avaliar</button>
+										<button type="submit" data-bs-dismiss="offcanvas" class="btn btn-primary m-3">Avaliar</button>
 									</div>
 								</div>
 							</div>
