@@ -19,7 +19,6 @@ export default {
 			<a class="btn btn-primary">Adicionar ao Carrinho</a>
 		</div>
 	</div>
-
 	<div class="card m-4">
 		<h5 class="card-header">Modelos disponíveis</h5>
 		<div class="card-body d-flex">
