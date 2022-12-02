@@ -25,16 +25,20 @@ import { RouterLink } from 'vue-router';
 							</div>
 						</div>
 					</RouterLink>
-					<div class="carousel-item" data-bs-interval="2000">
-						<img src="../assets/tenis2.png" class="d-block w-100 p-5 rounded-2" alt="...">
-						<div class="carousel-caption  d-md-block">
+					<RouterLink to="/itens/1-2">
+						<div class="carousel-item" data-bs-interval="2000">
+							<img src="../assets/tenis2.png" class="d-block w-100 p-5 rounded-2" alt="...">
+							<div class="carousel-caption  d-md-block">
+							</div>
 						</div>
-					</div>
-					<div class="carousel-item">
-						<img src="../assets/tenis3.png" class="d-block w-100 p-5 rounded-2" alt="...">
-						<div class="carousel-caption  d-md-block">
+					</RouterLink>
+					<RouterLink to="/itens/1-3">
+						<div class="carousel-item">
+							<img src="../assets/tenis3.png" class="d-block w-100 p-5 rounded-2" alt="...">
+							<div class="carousel-caption  d-md-block">
+							</div>
 						</div>
-					</div>
+					</RouterLink>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#tenis" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -1,7 +1,7 @@
 <script>
 import { RouterLink } from 'vue-router';
 </script>
-<template>
+	<template>
 	<div class="cabecalho">
 		<nav class="navbar navbar-dark bg-primary p-4 rounded-3">
 			<div class="container-fluid">
@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router';
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<a class="navbar-brand" href="#">GS - Code</a>
+				<a class="navbar-brand" href="#">SG - Code</a>
 				<button class="navbar-toggler" type="button" href="#">
 					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
 						class="bi bi-cart3" viewBox="0 0 16 16">
