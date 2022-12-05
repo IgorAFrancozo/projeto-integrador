@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router';
 <template>
 	<div class="conteudo">
 		<form class="d-flex mt-3 p-4" role="search">
-			<input class="form-control me-2" type="search" placeholder="Faça Sua Pesquisa" aria-label="Search">
+			<input class="form-control me-2" type="search" placeholder="Faça Sua Pesquisa em nosso catálogo" aria-label="Search">
 			<button class="btn btn-outline-primary" type="submit">Search</button>
 		</form>
 		<div class="item1">
