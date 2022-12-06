@@ -17,9 +17,21 @@
 			<path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
 		</svg>
 		<br class="text-white" />
+		<a class="text-white">
+			Lorem ipsum dol	or sit amet, consectetur adipiscing elit.
+		</a>
+		<br class="text-white" />
+		<a class="text-white">
+			Lorem ipsum curabitur viverra molestie mauris vitae dictum.
+			Maecenas ac tincidunt ex.
+		</a>
+		
 		<br class="text-white" />
 	</div>
 </template>
 <style>
-
+.text-white {
+	align-items: center;
+	justify-content: center;
+}
 </style>

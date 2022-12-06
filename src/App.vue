@@ -1,13 +1,12 @@
 <script setup>
-import cabecalho from './components/cabecalho.vue';
-import conteudo from './components/conteudo.vue';
-import rodape from './components/rodape.vue';
+import cabecalho from './components/Cabecalho.vue';
+import rodape from './components/Rodape.vue';
 import { RouterView } from 'vue-router';
 
 </script>
 
 <template>
-	<div class="dashboard text-center">
+	<div class="container">
 		<cabecalho></cabecalho>
 		<main>
 			<RouterView />

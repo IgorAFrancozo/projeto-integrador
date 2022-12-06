@@ -1,6 +1,10 @@
-<script>
+<script setup>
 import { RouterLink } from "vue-router";
+import { useShoppingStore } from '../stores'
+//get store
+const data = useShoppingStore();
 </script>
+
 <template>
 	<div class="cabecalho">
 		<nav class="navbar navbar-dark bg-primary p-4 rounded-3">
@@ -11,13 +15,17 @@ import { RouterLink } from "vue-router";
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<a class="navbar-brand" href="#">SG - Code</a>
-				<button class="navbar-toggler" type="button" href="#">
-					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-						class="bi bi-cart3" viewBox="0 0 16 16">
-						<path
-							d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-					</svg>
-				</button>
+				<RouterLink to="/cart">
+					<button class="navbar-toggler" type="button" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+							class="bi bi-cart3" viewBox="0 0 16 16">
+							<path
+								d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+						</svg>
+						<i class="text-red">({{ data.countCartItems }})</i>
+					</button>
+
+				</RouterLink>
 				<div class="collapse navbar-collapse pt-4" id="navbarSupportedContent">
 					<ul class="navbar-nav">
 						<li class="nav-item mt-4">
@@ -55,38 +63,15 @@ import { RouterLink } from "vue-router";
 										<li><a class="dropdown-item" href="#">Ótimo</a></li>
 									</ul>
 									<div class="mb-3">
-										<label for="exampleFormControlTextarea1" class="form-label">Conte-nos como
-											melhorar:
+										<label for="exampleFormControlTextarea1" class="form-label">O que podemos
+											melhorar?
 										</label>
 										<textarea class="form-control" id="exampleFormControlTextarea1"
 											rows="3"></textarea>
-										<!-- Button trigger modal -->
 										<button type="button" class="btn btn-primary" data-bs-toggle="modal"
 											data-bs-target="#exampleModal">
 											Avaliar
 										</button>
-
-										<!-- Modal -->
-										<div class="modal fade" id="exampleModal" tabindex="-1"
-											aria-labelledby="exampleModalLabel" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h1 class="modal-title fs-5" id="exampleModalLabel">Avaliação
-														</h1>
-														<button type="button" class="btn-close" data-bs-dismiss="modal"
-															aria-label="Close"></button>
-													</div>
-													<div class="modal-body">
-														Obrigado por avaliar nosso sistema!
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-success"
-															data-bs-dismiss="offcanvas">OK</button>
-													</div>
-												</div>
-											</div>
-										</div>
 									</div>
 								</div>
 							</div>
@@ -121,7 +106,6 @@ import { RouterLink } from "vue-router";
 											<label for="inputPassword" class="control-label">Senha</label>
 											<input type="password" class="form-control" id="inputPassword"
 												placeholder="Digite sua Senha..." minlength="6" required />
-											<span class="help-block color-gray">Mínimo de seis (6) digitos</span>
 										</div>
 
 										<button type="submit" class="btn btn-primary m-4 text-center">
