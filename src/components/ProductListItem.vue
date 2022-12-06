@@ -1,5 +1,4 @@
 <script setup>
-import { RouterLink } from 'vue-router';
 import { useShoppingStore } from '../stores'
 //get props
 const props = defineProps({

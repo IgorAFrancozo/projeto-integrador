@@ -1,6 +1,7 @@
 <script setup>
 import cabecalho from './components/Cabecalho.vue';
 import rodape from './components/Rodape.vue';
+import Reviews from './components/Reviews.vue';
 import { RouterView } from 'vue-router';
 
 </script>

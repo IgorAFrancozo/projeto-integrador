@@ -27,7 +27,7 @@ import { RouterLink } from 'vue-router';
                 </div>
                 <div class="carousel-inner ">
                     <RouterLink to="/conteudo">
-                        <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="carousel-item active" data-bs-interval="2000">
                             <img src="https://cdn.awsli.com.br/1000x1000/2297/2297245/produto/153839941/9831880c30.jpg"
                                 class="d-block w-100 p-5 rounded-2" alt="...">
                             <div class="carousel-caption  d-md-block">

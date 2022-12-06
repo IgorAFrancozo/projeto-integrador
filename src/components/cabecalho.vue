@@ -32,50 +32,11 @@ const data = useShoppingStore();
 							<RouterLink to="/" class="btn btn-primary w-100" aria-current="page">Catálogo
 							</RouterLink>
 						</li>
+
 						<li class="nav-item">
-							<a class="btn btn-primary w-100" data-bs-toggle="offcanvas" href="#offcanvasExample"
-								role="button" aria-controls="offcanvasExample">
-								Avaliação
-							</a>
+							<RouterLink to="/reviews" class="btn btn-primary w-100">Avaliar Sistema
+							</RouterLink>
 						</li>
-						<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-							aria-labelledby="offcanvasExampleLabel">
-							<div class="offcanvas-header">
-								<h5 class="offcanvas-title" id="offcanvasExampleLabel">
-									Avalie nosso Sistema !
-								</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-									aria-label="Close"></button>
-							</div>
-							<div class="offcanvas-body">
-								<div>
-									Deixe sua avaliação para que possamos melhorar sua experiência
-									como usuário !
-								</div>
-								<div class="dropdown mt-3">
-									<button class="btn btn-secondary dropdown-toggle" type="button"
-										data-bs-toggle="dropdown">
-										Selecionar Avaliação
-									</button>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Ruim</a></li>
-										<li><a class="dropdown-item" href="#">Bom</a></li>
-										<li><a class="dropdown-item" href="#">Ótimo</a></li>
-									</ul>
-									<div class="mb-3">
-										<label for="exampleFormControlTextarea1" class="form-label">O que podemos
-											melhorar?
-										</label>
-										<textarea class="form-control" id="exampleFormControlTextarea1"
-											rows="3"></textarea>
-										<button type="button" class="btn btn-primary" data-bs-toggle="modal"
-											data-bs-target="#exampleModal">
-											Avaliar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
 
 						<li class="nav-item">
 							<button class="btn btn-primary w-100" role="button" data-bs-toggle="offcanvas"
