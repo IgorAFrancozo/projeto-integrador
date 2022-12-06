@@ -42,7 +42,7 @@ export const useShoppingStore = defineStore('shopping', {
                     image: 'https://cdn.awsli.com.br/1000x1000/1755/1755854/produto/87668795/1ad09aeba8.jpg'
                 }
             ],
-            cartItems : []
+            cartItems : [], reviews:[]
         }
     },
     getters: {
@@ -51,6 +51,18 @@ export const useShoppingStore = defineStore('shopping', {
         },
         getCartItems(){
             return this.cartItems;
+        },
+		getReviews(state) {
+            return state.reviews;
+        },
+        getReview(state) {
+            return (reviewId) => state.reviews.find(review => review.id === reviewId);
+        },
+        reviewsLength(state){
+            return state.reviews.length;
+        },
+        calculateReviewsAverage(state){
+            return state.reviews.reduce((acc,review) => acc + review.rating / state.reviews.length ,0).toFixed(1);
         }
     },
     actions: {
@@ -115,31 +127,8 @@ export const useShoppingStore = defineStore('shopping', {
               showConfirmButton: false,
               timer: 1500
             });
-        }
-        
-    },
-}, 'reviews', {
-    state: () => {
-        return { 
-            reviews:[]
-        }
-    },
-    getters: {
-        getReviews(state) {
-            return state.reviews;
         },
-        getReview(state) {
-            return (reviewId) => state.reviews.find(review => review.id === reviewId);
-        },
-        reviewsLength(state){
-            return state.reviews.length;
-        },
-        calculateReviewsAverage(state){
-            return state.reviews.reduce((acc,review) => acc + review.rating / state.reviews.length ,0).toFixed(1);
-        }
-    },
-    actions: {
-        addReview(review) {
+		addReview(review) {
             this.reviews.unshift(review);
         },
         updateReview(item){

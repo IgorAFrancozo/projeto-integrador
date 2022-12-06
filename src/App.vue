@@ -1,7 +1,6 @@
 <script setup>
 import cabecalho from './components/Cabecalho.vue';
 import rodape from './components/Rodape.vue';
-import Reviews from './components/Reviews.vue';
 import { RouterView } from 'vue-router';
 
 </script>
@@ -9,9 +8,7 @@ import { RouterView } from 'vue-router';
 <template>
 	<div class="container">
 		<cabecalho></cabecalho>
-		<main>
 			<RouterView />
-		</main>
 		<rodape></rodape>
 	</div>
 

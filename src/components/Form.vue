@@ -6,7 +6,7 @@
     import { v4 as uuidv4 } from 'uuid';
     import { useRouter } from 'vue-router';
 
-    //get Reviews
+    //get store
     const store = useShoppingStore();
 
      //get routes
@@ -48,7 +48,7 @@
         data.name = '';
         data.message = '';
         data.rating = 0;
-        router.push('/');
+        router.push('/reviews');
     }
 
     //disable submit button when form is empty
@@ -70,7 +70,7 @@
         }
     });
 
-    //Review preenchido, update no Form
+    //fill review the form to update
     onMounted(() => {
         if(props.updating){
             const reviewToEdit = store.getReview(props.reviewId);
