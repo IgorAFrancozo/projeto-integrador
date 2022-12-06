@@ -8,12 +8,12 @@
 <template>
     <div className='container my-4'>
         <div className="d-flex justify-content-between align-items-center">
-            <h5>Reviews: 
+            <h5>Avaliações: 
                 <span className="badge bg-dark rounded-pill">
                     {{store.reviewsLength}}
                 </span>
             </h5>
-            <h5>Average: 
+            <h5>Média: 
                 <span className="badge bg-warning text-dark rounded-pill">
                     {{ store.calculateReviewsAverage }}
                 </span>

@@ -84,21 +84,21 @@
 <template>
     <form class='mt-5'>
         <div class='mb-3'>
-            <label htmlFor='name' class='form-label'>Name</label>
+            <label htmlFor='name' class='form-label'>Nome</label>
             <input 
                 v-model="data.name"
                 type='text' 
                 name='name'
                 class='form-control' 
-                placeholder='Name' />
+                placeholder='Nome' />
         </div>
         <div class='mb-3'>
-            <label htmlFor='message' class='form-label'>Message</label>
+            <label htmlFor='message' class='form-label'>Avaliação</label>
             <textarea 
                 v-model="data.message"
                 class='form-control' 
                 name='message' 
-                placeholder='Message'
+                placeholder='Digite aqui sua avaliação'
                 rows='3'></textarea>
         </div>
         <div class='mb-3'>
@@ -112,7 +112,7 @@
                 :disabled="disabled"
                 type='submit' 
                 class='btn btn-warning'>
-                update
+                Atualizar Avaliação
             </button>
         </div>
         <div class='mb-3' v-else>
@@ -121,7 +121,7 @@
                 :disabled="disabled"
                 type='submit' 
                 class='btn btn-primary'>
-                submit
+                Enviar
             </button>
         </div>
     </form>

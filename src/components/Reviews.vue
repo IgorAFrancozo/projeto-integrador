@@ -17,8 +17,8 @@ const data = reactive({
 
 <template>
 	<div class="card">
-		<h3>
-			<i className="bi bi-star-half fs-2 text-danger"></i> Avalie Nosso Sistema
+		<h3 class="d-flex justify-content-center mt-2 align-items-center">
+			<i className="bi bi-star-half fs-2 text-warning"></i>Avalie Nosso Sistema 
 		</h3>
 		<div class="card-body">
 			<Form />
@@ -30,8 +30,5 @@ const data = reactive({
 	</div>
 </template>
   
-
-  
 <style>
-
 </style>
