@@ -12,7 +12,7 @@ import { RouterLink } from 'vue-router';
                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
             </svg></button>
     </form>
-    <div class="conteudo d-flex">
+    <div class="conteudo">
         <div class="item1 col-md-3 mb-2">
             <h2 class="mt-4 text-center">Tênis Air Jordan</h2>
             <div id="tenis" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -34,7 +34,7 @@ import { RouterLink } from 'vue-router';
                             </div>
                         </div>
                     </RouterLink>
-                    <RouterLink to="/">
+                    <RouterLink to="/conteudo">
                         <div class="carousel-item" data-bs-interval="2000">
                             <img src="https://cdn.awsli.com.br/800x800/1721/1721424/produto/117839161/tenis-nike-air-jordan-branco-preto-vermelho-1da3f389.jpg"
                                 class="d-block w-100 p-5 rounded-2" alt="...">
@@ -42,7 +42,7 @@ import { RouterLink } from 'vue-router';
                             </div>
                         </div>
                     </RouterLink>
-                    <RouterLink to="/">
+                    <RouterLink to="/conteudo">
                         <div class="carousel-item">
                             <img src="https://cdn.awsli.com.br/1000x1000/1755/1755854/produto/87657524/6e0f808666.jpg"
                                 class="d-block w-100 p-5 rounded-2" alt="...">
@@ -50,7 +50,7 @@ import { RouterLink } from 'vue-router';
                             </div>
                         </div>
                     </RouterLink>
-                    <RouterLink to="/">
+                    <RouterLink to="/conteudo">
                         <div class="carousel-item">
                             <img src="https://cdn.awsli.com.br/1000x1000/1721/1721424/produto/117839163/tenis-nike-air-jordan-preto-branco-vermelho-d8502bb0.jpg"
                                 class="d-block w-100 p-5 rounded-2" alt="...">
@@ -58,7 +58,7 @@ import { RouterLink } from 'vue-router';
                             </div>
                         </div>
                     </RouterLink>
-                    <RouterLink to="/">
+                    <RouterLink to="/conteudo">
                         <div class="carousel-item">
                             <img src="https://cdn.awsli.com.br/1000x1000/1755/1755854/produto/89950756/1fefa99798.jpg"
                                 class="d-block w-100 p-5 rounded-2" alt="...">
@@ -66,7 +66,7 @@ import { RouterLink } from 'vue-router';
                             </div>
                         </div>
                     </RouterLink>
-                    <RouterLink to="/">
+                    <RouterLink to="/conteudo">
                         <div class="carousel-item">
                             <img src="https://cdn.awsli.com.br/1000x1000/1755/1755854/produto/87668795/1ad09aeba8.jpg"
                                 class="d-block w-100 p-5 rounded-2" alt="...">
