@@ -14,7 +14,7 @@ const data = useShoppingStore();
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<a class="navbar-brand" href="#">SG - Code</a>
+				<a class="navbar-brand tituloCss" href="#">SG - Code</a>
 				<RouterLink to="/cart">
 					<button class="navbar-toggler" type="button" href="#">
 						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -83,6 +83,10 @@ const data = useShoppingStore();
 	</div>
 </template>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Russo+One&display=swap');
+.tituloCss{
+	font-family: 'Russo One', sans-serif;
+}
 .btn {
 	opacity: 70%;
 	color: white;
