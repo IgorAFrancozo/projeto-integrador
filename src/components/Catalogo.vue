@@ -6,13 +6,13 @@ import { RouterLink } from 'vue-router';
     <form class="d-flex mt-3 p-4" role="search">
 
         <input class="form-control me-2" type="search" placeholder="Faça Sua Pesquisa" aria-label="Search">
-       <RouterLink to="/conteudo">
-		   <button class="btn btn-outline-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-			height="16" fill="currentColor" class="bi bi-search mb-1" viewBox="0 0 16 16">
-			<path
-			d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-		</svg></button>
-	</RouterLink>
+        <RouterLink to="/conteudo">
+            <button class="btn btn-outline-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-search mb-1" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></button>
+        </RouterLink>
     </form>
     <div class="conteudo">
         <div class="item1 col-md-3 mb-2">
@@ -27,7 +27,7 @@ import { RouterLink } from 'vue-router';
                     <button type="button" data-bs-target="#tenis" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     <button type="button" data-bs-target="#tenis" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 </div>
-                <div class="carousel-inner ">
+                <div class="carousel-inner">
                     <RouterLink to="/conteudo">
                         <div class="carousel-item active" data-bs-interval="2000">
                             <img src="https://cdn.awsli.com.br/1000x1000/2297/2297245/produto/153839941/9831880c30.jpg"
@@ -190,3 +190,8 @@ import { RouterLink } from 'vue-router';
         </div>
     </div>
 </template>
+
+<style>
+.conteudo {
+}
+</style>
