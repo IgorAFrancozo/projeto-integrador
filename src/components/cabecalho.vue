@@ -6,8 +6,8 @@ const data = useShoppingStore();
 </script>
 
 <template>
-	<div class="cabecalho">
-		<nav class="navbar navbar-dark bg-primary p-4 rounded-3">
+	<div id="cabecalho">
+		<nav class="navbar navbar-dark bg-primary p-4 rounded-2 azulCabecalho">
 			<div class="container-fluid">
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -84,9 +84,11 @@ const data = useShoppingStore();
 </template>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Russo+One&display=swap');
-.tituloCss{
+
+.tituloCss {
 	font-family: 'Russo One', sans-serif;
 }
+
 .btn {
 	opacity: 70%;
 	color: white;
@@ -97,8 +99,11 @@ const data = useShoppingStore();
 	color: gray;
 }
 
-.modal-backdrop.fade.show {
-	z-index: -2;
-	opacity: 0;
+.azulCabecalho {
+	align-items: center;
+}
+
+#cabecalho {
+	padding-top: 3px;
 }
 </style>
