@@ -7,14 +7,14 @@ const data = useShoppingStore();
 
 <template>
 	<div class="cabecalho">
-		<nav class="navbar navbar-dark bg-primary p-4 rounded-3">
+		<nav class="navbar navbar-dark bg-primary p-3 rounded-3 css2">
 			<div class="container-fluid">
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<a class="navbar-brand tituloCss" href="#">SG - Code</a>
+				<a class="navbar-brand ms-1 tituloCss" href="#">SG - Code</a>
 				<RouterLink to="/cart">
 					<button class="navbar-toggler" type="button" href="#">
 						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -100,5 +100,9 @@ const data = useShoppingStore();
 .modal-backdrop.fade.show {
 	z-index: -2;
 	opacity: 0;
+}
+.css2{
+	padding-bottom: 2px;
+	padding-top: 2px;
 }
 </style>
